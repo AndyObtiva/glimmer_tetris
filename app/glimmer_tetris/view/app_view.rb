@@ -26,13 +26,6 @@ class GlimmerTetris
     class AppView
       include Glimmer::UI::CustomShell
 
-      # Constants to be used through out the views
-      BLOCK_SIZE = 25
-      FONT_NAME = 'Menlo'
-      FONT_TITLE_HEIGHT = 32
-      FONT_TITLE_STYLE = :bold
-      BEVEL_CONSTANT = 20
-      
       attr_reader :game
       
       before_body {
@@ -111,13 +104,15 @@ class GlimmerTetris
   
             Model::Game::PLAYFIELD_HEIGHT.times do |row|
               Model::Game::PLAYFIELD_WIDTH.times do |column|
-                label {
+                canvas { |canvas_proxy|
                   layout_data {
                     width_hint BLOCK_SIZE
                     height_hint BLOCK_SIZE
                   }
                   
-                  background bind(@game.playfield[row][column], :color)
+                  bevel(size: BLOCK_SIZE) {
+                    base_color bind(@game.playfield[row][column], :color)
+                  }
                 }
               end
             end

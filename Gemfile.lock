@@ -37,6 +37,8 @@ GEM
       array_include_methods (>= 1.0.4, < 2.0.0)
       concurrent-ruby (>= 1.1.7, < 2.0.0)
       facets (>= 3.1.0, < 4.0.0)
+    glimmer-cp-bevel (0.1.1)
+      glimmer-dsl-swt (>= 4.18.7.4, < 5.0.0.0)
     glimmer-dsl-swt (4.20.0.0)
       glimmer (~> 1.3.1)
       jruby-win32ole (>= 0.8.5, < 2.0.0)
@@ -150,6 +152,7 @@ PLATFORMS
   universal-java-1.8
 
 DEPENDENCIES
+  glimmer-cp-bevel (~> 0.1.1)
   glimmer-dsl-swt (~> 4.20.0.0)
   juwelier (= 2.4.9)
   rspec (~> 3.5.0)
