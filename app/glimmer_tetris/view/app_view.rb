@@ -23,6 +23,7 @@ require_relative '../model/game'
 
 require_relative 'playfield'
 require_relative 'score_lane'
+require_relative 'high_score_dialog'
 
 class GlimmerTetris
   module View
@@ -82,9 +83,16 @@ class GlimmerTetris
       after_body {
         observe(@game, :game_over) do |game_over|
           if game_over
-            show_game_over_message_box
+            show_high_score_dialog
           else
             start_moving_tetrominos_down
+          end
+        end
+        observe(@game, :show_high_scores) do |show_high_scores|
+          if show_high_scores
+            show_high_score_dialog
+          else
+            @high_score_dialog.close unless @high_score_dialog.nil? || @high_score_dialog.disposed? || !@high_score_dialog.visible?
           end
         end
         @game.start!
@@ -117,12 +125,10 @@ class GlimmerTetris
         end
       end
       
-      def show_game_over_message_box
-        message_box {
-          text 'Game Over'
-          message 'Play Again?'
-        }.open # this blocks until closed
-        @game.start!
+      def show_high_score_dialog
+        return if @high_score_dialog&.visible?
+        @high_score_dialog = high_score_dialog(parent_shell: body_root, game: @game) if @high_score_dialog.nil? || @high_score_dialog.disposed?
+        @high_score_dialog.show
       end
       
       def show_about_dialog
