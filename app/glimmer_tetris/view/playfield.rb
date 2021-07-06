@@ -19,19 +19,39 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-$LOAD_PATH.unshift(File.expand_path('..', __FILE__))
-
-require 'bundler/setup'
-Bundler.require(:default)
-require 'glimmer_tetris/view/app_view'
+require_relative 'block'
 
 class GlimmerTetris
-  APP_ROOT = File.expand_path('../..', __FILE__)
-  VERSION = File.read(File.join(APP_ROOT, 'VERSION'))
-  LICENSE = File.read(File.join(APP_ROOT, 'LICENSE.txt'))
-  BLOCK_SIZE = 25
-  FONT_NAME = 'Menlo'
-  FONT_TITLE_HEIGHT = 32
-  FONT_TITLE_STYLE = :bold
-  BEVEL_CONSTANT = 20
+  module View
+    class Playfield
+      include Glimmer::UI::CustomWidget
+  
+      options :game_playfield, :playfield_width, :playfield_height
+  
+      body {
+        composite((:double_buffered unless OS.mac?)) {
+          grid_layout {
+            num_columns playfield_width
+            make_columns_equal_width true
+            margin_width BLOCK_SIZE
+            margin_height BLOCK_SIZE
+            horizontal_spacing 0
+            vertical_spacing 0
+          }
+          
+          playfield_height.times do |row|
+            playfield_width.times do |column|
+              block(game_block: game_playfield[row][column]) {
+                layout_data {
+                  width_hint BLOCK_SIZE
+                  height_hint BLOCK_SIZE
+                }
+              }
+            end
+          end
+        }
+      }
+  
+    end
+  end
 end

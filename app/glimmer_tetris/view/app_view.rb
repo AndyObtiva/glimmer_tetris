@@ -21,6 +21,9 @@
 
 require_relative '../model/game'
 
+require_relative 'playfield'
+require_relative 'score_lane'
+
 class GlimmerTetris
   module View
     class AppView
@@ -89,34 +92,12 @@ class GlimmerTetris
       
       body {
         shell(:no_resize) {
-          grid_layout
+          grid_layout 2, false
           text 'Glimmer Tetris'
 
-          composite((:double_buffered unless OS.mac?)) {
-            grid_layout {
-              num_columns Model::Game::PLAYFIELD_WIDTH
-              make_columns_equal_width true
-              margin_width BLOCK_SIZE
-              margin_height BLOCK_SIZE
-              horizontal_spacing 0
-              vertical_spacing 0
-            }
-  
-            Model::Game::PLAYFIELD_HEIGHT.times do |row|
-              Model::Game::PLAYFIELD_WIDTH.times do |column|
-                canvas { |canvas_proxy|
-                  layout_data {
-                    width_hint BLOCK_SIZE
-                    height_hint BLOCK_SIZE
-                  }
-                  
-                  bevel(size: BLOCK_SIZE) {
-                    base_color bind(@game.playfield[row][column], :color)
-                  }
-                }
-              end
-            end
-          }
+          playfield(game_playfield: @game.playfield, playfield_width: Model::Game::PLAYFIELD_WIDTH, playfield_height: Model::Game::PLAYFIELD_HEIGHT)
+          
+          score_lane(game: @game)
         }
       }
       
