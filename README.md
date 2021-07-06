@@ -1,6 +1,8 @@
-glimmer_tetris===================
+# Glimmer Tetris
 
-Description goes here.
+[Glimmer DSL for SWT](https://github.com/AMaleh/glimmer-dsl-swt/blob/master/docs/reference/GLIMMER_PACKAGING_AND_DISTRIBUTION.md) External Sample.
+
+Explained in [Best of Ruby Gems Series](https://github.com/planetruby/gems).
 
 Contributing to glimmer_tetris
 ------------------------------------------
