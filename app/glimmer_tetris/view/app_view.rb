@@ -24,6 +24,7 @@ require_relative '../model/game'
 require_relative 'playfield'
 require_relative 'score_lane'
 require_relative 'high_score_dialog'
+require_relative 'tetris_menu_bar'
 
 class GlimmerTetris
   module View
@@ -102,7 +103,10 @@ class GlimmerTetris
         shell(:no_resize) {
           grid_layout 2, false
           text 'Glimmer Tetris'
-
+          minimum_size 475, 500
+          
+          tetris_menu_bar(game: @game)
+          
           playfield(game_playfield: @game.playfield, playfield_width: Model::Game::PLAYFIELD_WIDTH, playfield_height: Model::Game::PLAYFIELD_HEIGHT)
           
           score_lane(game: @game)
