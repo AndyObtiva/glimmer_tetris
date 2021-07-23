@@ -109,7 +109,9 @@ class GlimmerTetris
           
           playfield(game_playfield: @game.playfield, playfield_width: Model::Game::PLAYFIELD_WIDTH, playfield_height: Model::Game::PLAYFIELD_HEIGHT)
           
-          score_lane(game: @game)
+          score_lane(game: @game) {
+            layout_data(:fill, :fill, true, true)
+          }
         }
       }
       
