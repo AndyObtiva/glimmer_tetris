@@ -35,7 +35,6 @@ class GlimmerTetris
             center true
             fill true
             margin_width 0
-            margin_right BLOCK_SIZE
             margin_height BLOCK_SIZE
           }
           label(:center) {

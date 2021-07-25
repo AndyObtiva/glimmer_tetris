@@ -103,7 +103,7 @@ class GlimmerTetris
         shell(:no_resize) {
           grid_layout 2, false
           text 'Glimmer Tetris'
-          minimum_size 475, 500
+          minimum_size 500, 500
           
           tetris_menu_bar(game: @game)
           
