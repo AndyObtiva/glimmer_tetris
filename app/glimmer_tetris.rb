@@ -21,8 +21,13 @@
 
 $LOAD_PATH.unshift(File.expand_path('..', __FILE__))
 
-require 'bundler/setup'
-Bundler.require(:default)
+begin
+  require 'bundler/setup'
+  Bundler.require(:default)
+rescue
+  require 'glimmer-dsl-swt'
+  require 'glimmer-cp-bevel'
+end
 require 'glimmer_tetris/view/app_view'
 
 class GlimmerTetris
