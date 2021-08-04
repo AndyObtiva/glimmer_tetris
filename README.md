@@ -1,5 +1,6 @@
 # <img alt="Glimmer Tetris Icon" src="https://raw.githubusercontent.com/AndyObtiva/glimmer_tetris/master/package/linux/Glimmer%20Tetris.png" height=85 /> Glimmer Tetris
 ## [<img src="https://raw.githubusercontent.com/AndyObtiva/glimmer/master/images/glimmer-logo-hi-res.png" height=40 /> Glimmer Application](https://github.com/AndyObtiva/glimmer-dsl-swt)
+[![Gem Version](https://badge.fury.io/rb/glimmer_tetris.svg)](http://badge.fury.io/rb/glimmer_tetris)
 
 [Glimmer DSL for SWT](https://github.com/AndyObtiva/glimmer-dsl-swt) External Sample.
 
