@@ -27,6 +27,11 @@ Contributing to glimmer_tetris
     is fine, but please isolate to its own commit so I can cherry-pick
     around it.
 
+Change Log
+----------
+
+[CHANGELOG.md](CHANGELOG.md)
+
 Copyright
 ---------
 

@@ -22,7 +22,7 @@ Juwelier::Tasks.new do |gem|
   gem.email = "23052+AndyObtiva@users.noreply.github.com"
   gem.authors = ["Andy Maleh"]
 
-  gem.files = Dir['VERSION', 'LICENSE.txt', 'app/**/*', 'bin/**/*', 'config/**/*', 'db/**/*', 'docs/**/*', 'fonts/**/*', 'icons/**/*', 'images/**/*', 'lib/**/*', 'package/**/*', 'script/**/*', 'sounds/**/*', 'vendor/**/*', 'videos/**/*']
+  gem.files = Dir['glimmer_tetris.gemspec', 'CHANGELOG.md', 'VERSION', 'LICENSE.txt', 'app/**/*', 'bin/**/*', 'config/**/*', 'db/**/*', 'docs/**/*', 'fonts/**/*', 'icons/**/*', 'images/**/*', 'lib/**/*', 'package/**/*', 'script/**/*', 'sounds/**/*', 'vendor/**/*', 'videos/**/*']
   gem.require_paths = ['vendor', 'lib', 'app']
   gem.executables = ['glimmer_tetris']
   # dependencies defined in Gemfile

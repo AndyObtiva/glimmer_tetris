@@ -99,7 +99,7 @@ GEM
       awesome_print (~> 1.9.2)
     racc (1.5.2-java)
     rack (2.2.3)
-    rake (13.0.3)
+    rake (13.0.6)
     rake-tui (0.2.3)
       tty-prompt
     rchardet (1.8.0)
@@ -160,4 +160,4 @@ DEPENDENCIES
   warbler (= 2.0.5)
 
 BUNDLED WITH
-   2.2.21
+   2.2.27
