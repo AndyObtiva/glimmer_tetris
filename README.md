@@ -6,7 +6,9 @@
 
 ![Glimmer Tetris](https://github.com/AndyObtiva/glimmer-dsl-swt/raw/v4.20.0.0/images/glimmer-tetris.png)
 
-<img alt="Glimmer Tetris Icon" src="https://raw.githubusercontent.com/AndyObtiva/glimmer_tetris/master/package/linux/Glimmer%20Tetris.png" height=40 /> [Download v1.0.0 for the Mac (x64 Big Sur and older)](https://www.dropbox.com/s/gul4kyt3m86thw8/Glimmer%20Tetris-1.0.0.dmg?dl=1)
+<img alt="Glimmer Tetris Icon" src="https://raw.githubusercontent.com/AndyObtiva/glimmer_tetris/master/package/linux/Glimmer%20Tetris.png" height=40 /> [Download v1.0.0 for Mac (Big Sur and Older x64)](https://www.dropbox.com/s/gul4kyt3m86thw8/Glimmer%20Tetris-1.0.0.dmg?dl=1)
+
+<img alt="Glimmer Tetris Icon" src="https://raw.githubusercontent.com/AndyObtiva/glimmer_tetris/master/package/linux/Glimmer%20Tetris.png" height=40 /> [Download v1.0.1 for Windows (10 x64)](https://www.dropbox.com/s/ggpfu4abuthjydw/Glimmer%20Tetris-1.0.1.msi?dl=1)
 
 Explained in [Best of Ruby Gems Series](https://github.com/planetruby/gems).
 
