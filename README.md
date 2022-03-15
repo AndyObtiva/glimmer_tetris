@@ -10,7 +10,7 @@
 
 <img alt="Glimmer Tetris Icon" src="https://raw.githubusercontent.com/AndyObtiva/glimmer_tetris/master/package/linux/Glimmer%20Tetris.png" height=40 /> [Download v1.0.1 for Windows (10 x64)](https://www.dropbox.com/s/ggpfu4abuthjydw/Glimmer%20Tetris-1.0.1.msi?dl=1)
 
-Explained in [Best of Ruby Gems Series](https://github.com/planetruby/gems) on [Planet Ruby](http://planetruby.github.io/):
+Explained in [Best of Ruby Gems Series Tutorials](https://github.com/planetruby/gems) on [Planet Ruby](http://planetruby.github.io/):
 1. [glimmer_tetris Gem - Glimmer Tetris - The Playfield - Get Tetris Working in One Day!](https://github.com/planetruby/gems/blob/master/glimmer/05-glimmer-tetris-playfield.md)
 2. [glimmer_tetris Gem - Glimmer Tetris - The Score Lane - See Your Game Progress!](https://github.com/planetruby/gems/blob/master/glimmer/06-glimmer-tetris-score_lane.md)
 3. [glimmer_tetris Gem - Glimmer Tetris - High Scores, Menu, & Icon - Show Others How Good You Are!](https://github.com/planetruby/gems/blob/master/glimmer/07-glimmer-tetris-high-score-dialog-menu-bar-icon.md)
