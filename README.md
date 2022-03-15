@@ -18,6 +18,24 @@ Other [Glimmer](https://github.com/AndyObtiva/glimmer) games:
 
 [<img alt="Glimmer Wordle Icon" src="https://raw.githubusercontent.com/AndyObtiva/glimmer_wordle/master/icons/linux/Glimmer%20Wordle.png" height=40 /> Glimmer Wordle](https://github.com/AndyObtiva/glimmer_wordle)
 
+## Ruby Gem
+
+If you are a software engineer and would rather install this game as a Ruby gem, please follow these instructions.
+
+First, make sure you have all the [prerequisites of Glimmer DSL for SWT](https://github.com/AndyObtiva/glimmer-dsl-swt/tree/v4.20.0.5#pre-requisites) setup on your machine like Java and JRuby.
+
+Run:
+
+```
+gem install glimmer_tetris
+```
+
+Afterwards, run:
+
+```
+glimmer_tetris
+```
+
 Contributing to glimmer_tetris
 ------------------------------------------
 
