@@ -12,6 +12,12 @@
 
 Explained in [Best of Ruby Gems Series](https://github.com/planetruby/gems).
 
+Other [Glimmer](https://github.com/AndyObtiva/glimmer) games:
+
+[<img alt="Glimmer Klondike Solitaire Icon" src="https://raw.githubusercontent.com/AndyObtiva/glimmer_klondike_solitaire/master/icons/linux/Glimmer%20Klondike%20Solitaire.png" height=40 /> Glimmer Klondike Solitaire](https://github.com/AndyObtiva/glimmer_klondike_solitaire)
+
+[<img alt="Glimmer Wordle Icon" src="https://raw.githubusercontent.com/AndyObtiva/glimmer_wordle/master/icons/linux/Glimmer%20Wordle.png" height=40 /> Glimmer Wordle](https://github.com/AndyObtiva/glimmer_wordle)
+
 Contributing to glimmer_tetris
 ------------------------------------------
 
