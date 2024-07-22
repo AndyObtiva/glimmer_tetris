@@ -150,6 +150,7 @@ GEM
 
 PLATFORMS
   universal-java-1.8
+  universal-java-22
 
 DEPENDENCIES
   glimmer-cp-bevel (~> 0.1.1)
