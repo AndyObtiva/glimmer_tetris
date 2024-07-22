@@ -1,4 +1,4 @@
-# Copyright (c) 2021 Andy Maleh
+# Copyright (c) 2021-2024 Andy Maleh
 #
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
@@ -148,7 +148,7 @@ class GlimmerTetris
       def show_about_dialog
         message_box {
           text 'Glimmer Tetris'
-          message "Glimmer Tetris\n\nGlimmer DSL for SWT Sample\n\nCopyright (c) 2021 Andy Maleh"
+          message "Glimmer Tetris\n\nGlimmer DSL for SWT Sample\n\nCopyright (c) 2021-2024 Andy Maleh"
         }.open
       end
     end

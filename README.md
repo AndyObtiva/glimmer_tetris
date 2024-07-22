@@ -66,4 +66,4 @@ Copyright
 
 [MIT](LICENSE.txt)
 
-Copyright (c) 2021 Andy Maleh.
+Copyright (c) 2021-2024 Andy Maleh.
