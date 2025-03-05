@@ -54,11 +54,15 @@ Rake::RDocTask.new do |rdoc|
 end
 
 require 'glimmer/rake_task'
-Glimmer::RakeTask::Package.javapackager_extra_args =
-  " -name 'Glimmer Tetris'" +
-  " -title 'Glimmer Tetris'" +
-  " -Bmac.CFBundleName='Glimmer Tetris'" +
-  " -Bmac.CFBundleIdentifier='org.glimmertetris.application.Glimmertetris'"
+# Glimmer::RakeTask::Package.javapackager_extra_args =
+#   " -name 'Glimmer Tetris'" +
+#   " -title 'Glimmer Tetris'" +
+#   " -Bmac.CFBundleName='Glimmer Tetris'" +
+#   " -Bmac.CFBundleIdentifier='org.glimmertetris.application.Glimmertetris'"
   # " -BlicenseType=" +
   # " -Bmac.category=" +
   # " -Bmac.signing-key-developer-id-app="
+Glimmer::RakeTask::Package.jpackage_extra_args =
+  " --name 'Glimmer Tetris'" +
+  " --description 'Glimmer Tetris'"
+

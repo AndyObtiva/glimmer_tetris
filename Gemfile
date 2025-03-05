@@ -4,8 +4,10 @@ source 'https://rubygems.org'
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem 'glimmer-dsl-swt', '~> 4.20.0.0'
+gem 'glimmer-dsl-swt', '~> 4.30.0.0'
 gem 'glimmer-cp-bevel', '~> 0.1.1'
+gem 'jar-dependencies', '0.5.2'
+gem 'psych', '5.2.3'
 
 group :development do
   gem 'rspec', '~> 3.5.0'

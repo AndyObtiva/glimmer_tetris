@@ -24,7 +24,8 @@ $LOAD_PATH.unshift(File.expand_path('..', __FILE__))
 begin
   require 'bundler/setup'
   Bundler.require(:default)
-rescue Exception
+rescue Exception => e
+  puts e.full_message
   require 'glimmer-dsl-swt'
   require 'glimmer-cp-bevel'
 end
